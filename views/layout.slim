@@ -1,0 +1,10 @@
+doctype html
+html
+  head
+    title= @title || "Simple Sinatra CMS"
+    link rel="stylesheet" href="/styles/main.css"
+  body
+    div.wrapper
+      h1
+        a href="/pages" Simple Sinatra CMS
+      == yield
